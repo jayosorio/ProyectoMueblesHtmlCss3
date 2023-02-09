@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,700&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+    <header class="tienda">
+    <h1>TIENDAS <span>OSORIO</span></h1>
+    </header>
+
+    <div class="contenedor-navegacion">
+    <nav class="nav-principal contenedor">
+        <a href="index.html">Inicio</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="registro.html">Registro</a>
+        <a href="nosotros.html">Nosotros</a>
+    </nav>
+    </div>
+    
+
+    <main class="contenido-principal contenedor">
+    <h2 class="text-center">Registro</h2>
+    
+    <form class="formulario">
+        <fieldset>
+            <legend>Tus Datos</legend>
+
+            <div class="campo">
+                <label for="nombre">Nombre: </label>
+                <input class="imput" id="nombre" type="text" placeholder="Escribe tu nombre" required>
+            </div>
+
+            <div class="campo">
+                <label for="Apellidos">Apellidos: </label>
+                <input id="apellidos" type="text" placeholder="Escribe tus apellidos" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail: </label>
+                <input id="email" type="email" placeholder="Escribe tu e-mail" required>
+            </div>
+
+            <div class="campo">
+                <label for="Apellidos">Telefono: </label>
+                <input id="apellidos" type="text" placeholder="Escribe tu Telefono" required>
+            </div>
+            <div class="campo">
+                <label for="tel">Mensaje: </label>
+                <textarea rows="10" cols="20"></textarea>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Pais</legend>
+            <div class="campo">
+                <label for="pais">Pais</label>
+                <select id="pais">
+                    <option>--seleccione--</option>
+                    <option value="CO">Colombia</option>
+                    <option value="BR">Brasil</option>
+                    <option value="CH">Chile</option>
+                    <option value="UR">Uruguay</option>
+                    <option value="PR">Peru</option>
+                    <option value="AR">Argentina</option>
+                    <option value="USA">Estados Unidos</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informacion Extra</legend>
+
+            <div>
+                <label for="cliente">Cliente</label>
+                <input id="cliente" type="radio" name="tipo" value="cliente">
+            </div>
+
+            <div>
+                <label for="proveedor">Proveedor</label>
+                <input id="proveedor" type="radio" name="tipo" value="proveedor">
+            </div>
+            
+            <div class="campo">
+                <label for="categoria">Categoria de Interes</label>
+                <input list="categorias" name="categorias">
+                <datalist id="categorias">
+                    <option value="Cocina">
+                    <option value="Exterior">
+                    <option value="Recamara">
+                    <option value="Oficina">
+                    <option value="Television">
+                </datalist>
+            </div>
+
+        </fieldset>
+        <input type="submit" value="Enviar Formulario">
+
+
+
+    </form>
+
+    </main>
+
+    <hr>
+
+    <footer class="stse-footer">
+    <div class="grid-footer contedor">
+        <article>
+        <h3>Categorias</h3>
+
+        <nav class="footer-menu">
+            <a href="#">Cocina</a>
+            <a href="#">Oficina</a>
+            <a href="#">Jardin</a>
+            <a href="#">Cochera</a>
+            <a href="#">Dormitorios</a>
+        </nav>
+        </article>
+
+        <article>
+        <h3>Sobre Nosotros</h3>
+        <nav class="footer-menu">
+            <a href="#">Nuetra Historia</a>
+            <a href="#">Mision, Vision y Valores</a>
+            <a href="#">Carreras</a>
+            <a href="#">Politica de Privacidad</a>
+            <a href="#">Terminos del Servicio</a>
+        </nav>
+        </article>
+
+        <article>
+        <h3>Soporte</h3>
+        <nav class="footer-menu">
+            <a href="#">Preguntas Frecuentes</a>
+            <a href="#">Ayuda en Linea</a>
+            <a href="#">Confianza y Seguridad</a>
+        </nav>
+        </article> 
+
+        <p class="final-footer">TODOS LOS DERCHOS RESERVADOS</p>
+    </div>
+    </footer>
+
+
+</body>
+</html>

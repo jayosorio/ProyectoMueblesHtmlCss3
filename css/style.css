@@ -1,0 +1,267 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lora', serif;
+    background-color: lightcyan;
+}
+
+/* Globales */
+h1,h2,h3 {
+    font-family: 'Playfair Display', serif;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.btn {
+    background-color: #8cbc00;
+    display: block;
+    color: #f0f8ff;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px;
+    transition: background-color .4s ease-out;
+    -webkit-transition: background-color .4s ease-out;
+    -moz-transition: background-color .4s ease-out;
+    -ms-transition: background-color .4s ease-out;
+    -o-transition: background-color .4s ease-out;
+}
+
+.btn:hover {
+    background-color: #769c02;
+}
+
+/* utilidades */
+.text-center {
+    text-align: center;
+}
+
+/* Header y Navegacion */
+.tienda {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.tienda span {
+    color: #f08080;
+} 
+
+.contenedor-navegacion {
+    border-top: 1px solid #e1e1e1;
+}
+
+.nav-principal {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    border-top: 1px solid #e1e1e1;
+}
+
+.img-principal {
+    background-image: url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+
+/* categorias */
+.categorias {
+    padding-top: 50px;
+}
+.categorias h2 {
+    text-align: center;
+}
+.categoria a {
+    text-align: center;
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+}
+.categoria a:hover {
+    background-color: #f08080;
+    color:#f0f8ff;
+    border-radius: 30px;
+    font-size: 25px;
+    -webkit-border-radius: 30px;
+}
+.listado-categorias {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+/* sobre nosotros */
+.sobre-nosotros {
+    background-image: linear-gradient( to right, transparent 50%, #f08080 50%, #f08080 100%), url(../img/nosotros.jpg);
+    background-position: left center;
+    padding: 100px 0;
+    background-repeat: no-repeat;
+    background-size: 100%, 1200px;
+}
+
+.sobre-nosotros-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 100px;
+    color: #f0f8ff;
+}
+
+.texto-nosotros {
+    grid-column: 2 / 3;
+}
+
+/* productos */
+.contenido-principal {
+    padding-top: 50px;
+}
+
+.listado-productos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.producto:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+.producto:nth-child(1) img {
+    height: 430px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.producto:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.producto:nth-child(3) {
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+.producto:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.producto:nth-child(5) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.producto:nth-child(6) {
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+
+.producto {
+    background-color: #f08080;
+}
+
+.info-producto {
+    text-align: center;
+    color: #f0f8ff;
+} 
+
+.info-producto h3 {
+    margin: 0 0 5px;
+}
+
+.info-producto .precio {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* footer */
+.sise-footer {
+    border-top: 1px solid #f0f8ff;
+    margin: 50px;
+    padding-top: 50px;
+}
+
+.sise-footer h3 {
+    margin-bottom: 50px;
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid: 20px;
+    margin-left: 160px;
+}
+
+.footer-menu a {
+    display: block;
+}
+
+.final-footer p {
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 500px;
+}
+
+/* nosotros */
+.contenido-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 40px;
+}
+
+/* registro */
+.formulario {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.formulario fieldset {
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.formulario legend {
+    background-color: teal;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.campo {
+    display: flex;
+}
+
+.campo label {
+    flex-basis: 100px;
+}
+
+.campo .input {
+    flex: 1;
+}
